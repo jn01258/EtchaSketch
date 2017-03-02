@@ -1,0 +1,32 @@
+.wrapper {
+  width: 600px;
+  margin:0px auto;
+
+}
+a{
+  padding:5px 5px;
+  background-color: #f44242;
+  text-decoration: none;
+  color:white;
+  margin: auto;
+
+}
+
+*a.left{
+  float:left;
+}
+
+a.right{
+  float:right;
+}*
+ #pad {
+  width:400px;
+  height:400px;
+  margin: 30px auto;
+  border: 5px solid #f44242;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+}
