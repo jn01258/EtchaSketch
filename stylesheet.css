@@ -23,14 +23,15 @@ h2 {
 
  #pad {
   background-color: white;
-  height:400px;
-  width: 400px;
+  height:500px;
+  width: 500px;
   margin: 10px auto;
-  border: 5px solid #aeffda;
+  border: 10px solid #c49ce5;
 }
 
 #reset {
   border: none;
+  background-color: #c49ce5;
   font: 1em Griffy, Arial, sans-serif;
   transition: 0.2s;
 }

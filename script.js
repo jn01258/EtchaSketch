@@ -34,7 +34,7 @@ function setTool(newTool) {
 $(document).ready(function() {
 
     //Set up
-    var squaresPerSide = 16;
+    var squaresPerSide = 10;
       // default value of sqperside
     makeGrid(squaresPerSide);
       // run grid fx w/16 sq
@@ -49,7 +49,7 @@ $(document).ready(function() {
             case 'pen':``
                 $(this).css({
                     'opacity': 1,
-                    'background-color': 'black'
+                    'background-color': '#aeffda'
                 });
                 break;
             case 'pencil':
@@ -71,7 +71,7 @@ $(document).ready(function() {
                 var g = Math.floor(Math.random() * 256);
                 var b = Math.floor(Math.random() * 256);
                 $(this).css({
-                    'opacity': 1,
+                    'opacity': 0.6,
                     'background-color': 'rgb(' + r + ',' + g + ',' + b + ')'
                 });
                 break;
@@ -86,10 +86,10 @@ $(document).ready(function() {
                 //set it all the way to 0, and adjust for erasing too far past
                 //0, since it erases faster than the pencil draws
                 var newOpacity = $(this).css('opacity')
-                if (opacity - newOpacity < .015 || newOpacity < 0) {
+                if (opacity - newOpacity < 0.015 || newOpacity < 0) {
                     $(this).css({
                         'opacity': 0,
-                        'background-color': 'black'
+                        'background-color': '#aeffda'
                     }); //
                 } //
                 break;
@@ -110,10 +110,10 @@ $(document).ready(function() {
               // isnull = nsps, if nspps is null
             var isInteger = $.isNumeric(newSquaresPerSide) &&
                 Number.isInteger(+newSquaresPerSide);
-            var isPositive = newSquaresPerSide > 0;
+            var isPositive = (newSquaresPerSide > 0) && (newSquaresPerSide < 80);
             invalidInput = !isNull && !(isInteger && isPositive);
             if (invalidInput) {
-                alert('Only positive integers (1, 2, 3, etc.)');
+                alert('Only enter whole numbers between 1 and 80');
             }
         }
          while (invalidInput);
