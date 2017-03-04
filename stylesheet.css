@@ -1,36 +1,68 @@
-.wrapper {
+body {
+  background-color: #ffdaae;
+  font-family: Griffy, Arial, sans-serif;
+  color: #c49ce5;
+}
+#wrapper {
   width: 600px;
-  margin:0px auto;
-
+  margin: 0px auto;
 }
-a{
-  padding:5px 5px;
-  background-color: #f44242;
-  text-decoration: none;
-  color:white;
-  margin: auto;
-
-}
-
-*a.left{
-  float:left;
+#header {
+  /*css3-makes it responsive*/
+    display: flex;
+    /*horizontally aligns when don't use all the space in div */
+    justify-content: space-between;
+    align-items: flex-end;
+      /*align to the end of div*/
 }
 
-a.right{
-  float:right;
-}*
+h2 {
+  line-height:0;
+  /*so not obnoxiously large, and helps icons align together*/
+}
+
  #pad {
-  width:400px;
+  background-color: white;
   height:400px;
-  margin: 30px auto;
-  border: 5px solid #f44242;
+  width: 400px;
+  margin: 10px auto;
+  border: 5px solid #aeffda;
 }
 
-table {
-  width: 100%;
-  height: 100%;
+#reset {
+  border: none;
+  font: 1em Griffy, Arial, sans-serif;
+  transition: 0.2s;
 }
 
-td {
-  background-color: red;
+#reset:hover {
+  opacity: 0.8;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
+}
+#tools button {
+  background-color: transparent
+  padding: 8px;
+  transition: 0.2s;
+  opacity: 0.3;
+  /*so color is light, when not selected*/
+}
+
+#tools button:hover {
+  opacity: 1;
+}
+
+#tools .chosenTool, #tools .chosenTool:hover {
+  opacity:1;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+.row { display: flex;}
+
+.square {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  opacity: 0;
+  background-color: black;
 }

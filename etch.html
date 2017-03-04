@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Griffy" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
   <title>Andrea's EtchASketch</title>
 </head>
 <body>
-<div class="wrapper">
-  <p id="demo">Aqui</p>
-  <a href="#" class="left">Clear</a>
-  <a href="#" class"right">Resolution</a>
-
-  <div id="pad">
-    <table>
-
-    </table>
-
-
-
-
+<div id="wrapper">
+  <div id="header">
+    <div id="leftside">
+      <h2>Andrea's EtchASketch</h1>
+      <button id="reset">Start over</button>
+    </div>
+    <div id="tools">
+      <button id="pen">
+        <img src="http://bit.ly/2lzcnSn" height=40 width=40 alt="Pen">
+      </button>
+      <button id="pencil">
+        <img src="http://bit.ly/2lySo6A" height=40 width=40 alt="Pencil">
+      </button>
+      <button id="rainbow">
+        <img src="http://bit.ly/2myzWQv" height=40 width=40 alt="rainbow">
+      </button>
+      <button id="eraser">
+        <img src="http://bit.ly/2mR6Bwt" height=40 width=40 alt="eraser">
+      </button>
+    </div>
   </div>
+  <div id="pad"></div>
 </div>
 </body>
 </html>
